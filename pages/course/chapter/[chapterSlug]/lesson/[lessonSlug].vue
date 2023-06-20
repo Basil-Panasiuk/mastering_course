@@ -29,6 +29,8 @@
   </div>
 </template>
 <script setup>
+import { useLocalStorage } from "@vueuse/core";
+
 const course = useCourse();
 const route = useRoute();
 
@@ -51,9 +53,7 @@ useHead({
   title,
 });
 
-const progress = useState("progress", () => {
-  return [];
-});
+const progress = useLocalStorage("progress", []);
 
 const isLessonComplete = computed(() => {
   if (!progress.value[chapter.value.number - 1]) {
