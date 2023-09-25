@@ -5,7 +5,7 @@
       <p>It looks like something broke.</p>
       <p>Sorry about that.</p>
       <p>
-        <strong>{{ error.message }}</strong>
+        <strong>{{ error?.message }}</strong>
       </p>
       <p>
         Go to the

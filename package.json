@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxtjs/supabase": "^1.1.2",
     "@nuxtjs/tailwindcss": "^6.7.0",
     "@tailwindcss/typography": "0.5.8",
     "@types/node": "^18",
@@ -19,6 +20,7 @@
     "sass-loader": "^13.3.2"
   },
   "dependencies": {
+    "netlify-cli": "^16.4.2",
     "prettier": "^2.8.8"
   }
 }
